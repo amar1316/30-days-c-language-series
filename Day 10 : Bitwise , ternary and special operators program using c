@@ -1,0 +1,36 @@
+/* Bitwise , Ternary and Special Operators program using  c  */
+
+/*  & ,| , ^ , ~ , >> , <<    ----> Bitwise Operators
+    C ? e1 : e2 ;---- ternary operator
+    sizeof(int)  ----- special operators
+*/
+
+#include <stdio.h>
+
+int main()
+{
+    int a = 5 , b = 3;
+
+    printf("\n\n----Bitwise Operators----\n\n");
+
+    printf("a & b : %d\n",a & b);
+    printf("a | b : %d\n",a | b);
+    printf("a ^ b : %d\n",a ^ b);
+    printf("~a  : %d\n",~a);
+    printf("a << 1 : %d\n",a << 1);
+    printf("a >> 1 : %d\n",a >> 1);
+
+    printf("\n\n----Ternary Operators----\n\n");
+
+    (a > b) ? printf("a is greater than b") : printf("b is greater than a ");
+
+    (a > 0 && b > 0) ? printf("\n\nBoth are postive\n\n") : printf("\nboth are negative");
+
+    printf("\n\n----Special Operators----\n\n");
+
+    printf("size of int : %lu\n",sizeof(int));
+    printf("size of float : %lu\n",sizeof(float));
+    printf("size of char : %lu\n",sizeof(char));
+
+    return 0;
+}
