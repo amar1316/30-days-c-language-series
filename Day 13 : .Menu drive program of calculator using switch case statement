@@ -1,0 +1,49 @@
+/* Decision making statemnets  program using c lanugage */
+
+/*  1.simple days program using switch case statement
+    2.Menu drive program of calculator using switch case statement
+    int choices , a , b;
+    1. Addition\n2. Subtraction\n3. Multiplication\n4. Division\n
+
+      */
+
+
+#include <stdio.h>
+
+int main() {
+
+    int choices , a , b;
+
+    printf("1. Addition\n2. Subtraction\n3. Multiplication\n4. Division\n");
+
+    printf("Enter choices : ");
+    scanf("%d",&choices);
+
+    printf("Enter a , b values : ");
+    scanf("%d%d",&a,&b);
+
+    switch(choices){
+
+        case 1: printf("sum = %d\n",a+b);
+        break;
+
+        case 2: printf("difference = %d\n",a-b);
+        break;
+
+        case 3: printf("product = %d\n",a*b);
+        break;
+
+        case 4: printf("quotient = %d\n",a/b);
+        break;
+
+        default : printf("Invalid Choice\n");
+
+    }
+
+
+
+    return 0;
+}
+
+
+
