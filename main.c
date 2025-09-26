@@ -1,0 +1,48 @@
+/* Recursion program using C language */
+
+#include <stdio.h>
+
+
+
+// factorial program using recurison
+
+/*
+
+int factorial(int n) {
+    if(n == 0 || n == 1)  // base case
+        return 1;
+    else
+        return n * factorial(n - 1);  // recursive case
+}
+
+int main() {
+    int num = 5;
+    printf("Factorial of %d = %d\n", num, factorial(num));
+    return 0;
+}
+*/
+
+
+
+
+
+
+// fibonacci program using recursion
+
+int fibonacci(int n)
+{
+    if(n==0) return 0;
+    if(n==1) return 1;
+    else return fibonacci(n-1) + fibonacci(n-2);
+}
+
+int main()
+{
+    int n =7;
+    printf("fibonacci series up %d elements :\n",n);
+    for(int i=0;i<n;i++)
+    {
+        printf("%d ",fibonacci(i));
+    }
+    return 0;
+}
